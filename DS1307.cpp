@@ -47,7 +47,7 @@ void DS1307::begin() {
     Wire.begin();
 }
 
-#ifndef Arduino_h
+#ifndef ARDUINO
 /**
  * \brief          The function to start the I2C port with specified pins
  *                 

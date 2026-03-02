@@ -45,14 +45,14 @@
 #define SUN 7
 
 class DS1307 {
-  private:
+private:
     uint8_t decToBcd(uint8_t val);
     uint8_t bcdToDec(uint8_t val);
 
-  public:
+public:
     void begin();
-#ifndef Arduino_h
-    void begin(uint16_t SDA ,uint16_t SCL);
+#ifndef ARDUINO
+    void begin(uint16_t SDA, uint16_t SCL);
 #endif
     void startClock(void);
     void stopClock(void);
